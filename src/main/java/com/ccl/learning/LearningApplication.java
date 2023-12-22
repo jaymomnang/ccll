@@ -1,7 +1,7 @@
 package com.ccl.learning;
 
 import java.util.Collections;
-
+import models.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,8 +10,7 @@ public class LearningApplication {
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(LearningApplication.class);
-		app.setDefaultProperties(Collections
-          .singletonMap("server.port", "7000"));
+		app.setDefaultProperties(Collections.singletonMap("server.port", "7000"));
         app.run(args);
 	}
 

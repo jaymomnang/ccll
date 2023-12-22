@@ -8,12 +8,12 @@ import models.*;
 import repos.*;
 
 @RestController
-@RequestMapping("/api/newsletters")
-public class Newslettercontroller {
+@RequestMapping("/newsletters")
+public class NewsletterController {
 
     private final NewsletterRepository newsletterRepository;
 
-    public Newslettercontroller(NewsletterRepository newsletterRepository) {
+    public NewsletterController(NewsletterRepository newsletterRepository) {
         this.newsletterRepository = newsletterRepository;
     }
 
